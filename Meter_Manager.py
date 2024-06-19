@@ -7,7 +7,7 @@ import pandas as pd
 url = "https://www.meteronline.co.uk/api/v1/meter/meters"
 headers = {
     "Accept": "application/json",
-    "Authorization": "AUTHORISATION_KEY"
+    "Authorization": "AUTHORISATION_KEY" # Replace AUTHORISATION_KEY with your own auth key
 }
 
 response = requests.get(url, headers=headers)
@@ -24,7 +24,7 @@ else:
 url = f"https://www.meteronline.co.uk/api/v1/meter/{meter}/half-hourly-readings?from=2024-04-01T00%3A00&to=2024-04-30T23%3A30"
 headers = {
     "Accept": "application/json",
-    "Authorization": "AUTHORISATION_KEY"
+    "Authorization": "AUTHORISATION_KEY" # Replace AUTHORISATION_KEY with your own auth key
 }
 
 response = requests.get(url, headers=headers)
